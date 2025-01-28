@@ -6,7 +6,7 @@
 /*   By: jonathro <jonathro@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 11:39:00 by jonathro          #+#    #+#             */
-/*   Updated: 2024/11/03 17:28:31 by jonathro         ###   ########.fr       */
+/*   Updated: 2025/01/28 01:27:47 by jonathro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ char				*ft_strdup(const char *s);
 
 // NON LIBC FUNCTIONS
 char				*ft_substr(char const *s, unsigned int start, size_t len);
-char				*ft_strjoin(char const *s1, char const *s2);
+char				*ft_strjoin(char *s1, char *s2);
 char				*ft_strtrim(char const *s1, char const *set);
 char				**ft_split(char const *s, char c);
 char				*ft_itoa(int n);
