@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jonathro <jonathro@student.42porto.com>    +#+  +:+       +#+        */
+/*   By: jonathro <jonathro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 00:36:54 by jonathro          #+#    #+#             */
-/*   Updated: 2025/01/29 01:00:03 by jonathro         ###   ########.fr       */
+/*   Updated: 2025/01/29 01:24:03 by jonathro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,12 +23,12 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		i++;
 	}
 }
-
+/*
 void	sample_function(unsigned int index, char *c)
 {
 	printf("Index: %u, Character: %c\n", index, *c);
 }
-/*
+
 int	main(void)
 {
 	char	str[] = "Hello, World!";
