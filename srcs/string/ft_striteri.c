@@ -6,7 +6,7 @@
 /*   By: jonathro <jonathro@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 00:36:54 by jonathro          #+#    #+#             */
-/*   Updated: 2024/11/09 12:48:05 by jonathro         ###   ########.fr       */
+/*   Updated: 2025/01/29 01:00:03 by jonathro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,18 +24,18 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 	}
 }
 
-
-void sample_function(unsigned int index, char *c) {
-    printf("Index: %u, Character: %c\n", index, *c);
+void	sample_function(unsigned int index, char *c)
+{
+	printf("Index: %u, Character: %c\n", index, *c);
 }
+/*
+int	main(void)
+{
+	char	str[] = "Hello, World!";
 
-int main() {
-    char str[] = "Hello, World!";
-    
-    printf("Original string: %s\n", str);
-    
-    printf("Applying ft_striteri:\n");
-    ft_striteri(str, &sample_function);
-    
-    return 0;
+	printf("Original string: %s\n", str);
+	printf("Applying ft_striteri:\n");
+	ft_striteri(str, &sample_function);
+	return (0);
 }
+*/

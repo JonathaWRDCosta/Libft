@@ -6,13 +6,11 @@
 /*   By: jonathro <jonathro@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 23:17:04 by jonathro          #+#    #+#             */
-/*   Updated: 2024/11/18 17:32:05 by jonathro         ###   ########.fr       */
+/*   Updated: 2025/01/29 00:59:31 by jonathro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-
 
 static size_t	count_words(const char *str, char c)
 {
@@ -84,22 +82,22 @@ char	**ft_split(const char *s, char c)
 	return (result);
 }
 /*
-int main()
+int	main(void)
 {
-    char **result;
-    size_t i;
+	char	**result;
+	size_t	i;
 
-    result = ft_split("Hello world! This is a test.", ' ');
-    if (result)
-    {
-        for (i = 0; result[i]; i++)
-        {
-            ft_putstr_fd(result[i], 1);
-            ft_putstr_fd("\n", 1);
-            free(result[i]);
-        }
-        free(result);
-    }
-    return 0;
+	result = ft_split("Hello world! This is a test.", ' ');
+	if (result)
+	{
+		for (i = 0; result[i]; i++)
+		{
+			ft_putstr_fd(result[i], 1);
+			ft_putstr_fd("\n", 1);
+			free(result[i]);
+		}
+		free(result);
+	}
+	return (0);
 }
 */
