@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jonathro <jonathro@student.42porto.com>    +#+  +:+       +#+        */
+/*   By: jonathro <jonathro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 12:45:19 by jonathro          #+#    #+#             */
-/*   Updated: 2025/01/28 01:27:25 by jonathro         ###   ########.fr       */
+/*   Updated: 2025/02/03 23:44:05 by jonathro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@ char	*ft_strjoin(char *s1, char *s2)
 	if (s1 == NULL && s2 == NULL)
 		return (NULL);
 	if (s1 == NULL)
-		return (s2);
+		return (ft_strdup(s2));
 	if (s2 == NULL)
-		return (s1);
+		return (ft_strdup(s1));
 	s1_len = ft_strlen(s1);
 	s2_len = ft_strlen(s2);
 	s = (char *)malloc(sizeof(char) * (s1_len + s2_len + 1));
@@ -31,10 +31,9 @@ char	*ft_strjoin(char *s1, char *s2)
 		return (NULL);
 	ft_strlcpy(s, s1, s1_len + 1);
 	ft_strlcpy(s + s1_len, s2, s2_len + 1);
-	free(s1);
-	free(s2);
 	return (s);
 }
+
 /*
 int	main(void)
 {
